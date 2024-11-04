@@ -5,21 +5,20 @@
     --bg-color: #ffffff;
     --accent-bg: #f3f4f6;
 }
-  
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
-    
 }
-  
+
 /* Header and Navigation */
 header {
     background-color: rgb(253, 146, 7);
@@ -29,7 +28,7 @@ header {
     top: 0;
     z-index: 1000;
 }
-  
+
 nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,56 +37,56 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-  
+
 .logo img {
-    width: 40px; /* Adjust this value to make the logo smaller or larger */
+    width: 40px;
     height: auto;
 }
-  
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
-  
+
 .nav-links a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
-  
+
 .nav-links a:hover {
     color: var(--primary-color);
 }
-  
+
 /* Main Content */
 main {
     max-width: 1200px;
     margin: 6rem auto 2rem;
     padding: 0 1rem;
 }
-  
+
 section {
     margin-bottom: 4rem;
 }
-  
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
-  
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--text-color);
 }
-  
+
 p {
     margin-bottom: 1rem;
 }
-  
+
 /* Profile Image */
 .profile-image {
     width: 200px;
@@ -98,7 +97,7 @@ p {
     display: block;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
+
 /* Skills Grid */
 .skills-grid {
     display: grid;
@@ -106,30 +105,30 @@ p {
     gap: 2rem;
     margin-top: 2rem;
 }
-  
+
 .skill-card {
     background-color: var(--accent-bg);
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-  
+
 /* Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
-  
+
 .form-group {
     margin-bottom: 1.5rem;
 }
-  
+
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
-  
+
 input,
 textarea {
     width: 100%;
@@ -138,7 +137,7 @@ textarea {
     border-radius: 0.375rem;
     margin-top: 0.25rem;
 }
-  
+
 button {
     background-color: var(--primary-color);
     color: white;
@@ -149,52 +148,51 @@ button {
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
-  
+
 button:hover {
     background-color: #1d4ed8;
 }
-  
+
 /* Social Links */
 .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
 }
-  
+
 .social-links a {
     color: var(--text-color);
     text-decoration: none;
 }
-  
+
 .social-links a:hover {
     color: var(--primary-color);
 }
-  
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         gap: 1rem;
     }
-  
+
+    /* Ensure horizontal alignment of nav-links on mobile */
     .nav-links {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center; /* Center links on mobile */
         gap: 1rem;
     }
-  
+
     h1 {
         font-size: 2rem;
     }
-  
+
     h2 {
         font-size: 1.5rem;
     }
 }
 
-
-
-/* Basic styling for the slider */
+/* Slider */
 .slider {
     position: relative;
     max-width: 800px;
@@ -202,24 +200,21 @@ button:hover {
     overflow: hidden;
 }
 
-/* Slide container to display slides horizontally */
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-/* Individual slide styling */
 .slide {
-    min-width: 100%; /* Full width for each slide */
+    min-width: 100%;
     display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center;     /* Center image vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Slide image styling */
 .slide img {
-    max-width: 100%; /* Scale within the container width */
-    height: auto;    /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -250,7 +245,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Dot indicators styling */
+/* Dot indicators */
 .dots {
     text-align: center;
     padding: 10px;
@@ -271,24 +266,18 @@ button:hover {
 .dot.active {
     background-color: #717171;
 }
+
 /* Footer */
 footer {
-    background-color:rgb(253, 146, 7);
+    background-color: rgb(253, 146, 7);
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-/* Basic reset */
-* {
-    margin: 0;
-   padding: 0;
-    box-sizing: border-box;
-}
-
 /* Background image styling */
 .background-image {
-    background-image: url('image/pc1.jpg'); /* Ensure the correct path */
+    background-image: url('image/pc1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -296,6 +285,6 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    z-index: -1; /* Sends the background behind other content */
+    height: 100vh;
+    z-index: -1;
 }

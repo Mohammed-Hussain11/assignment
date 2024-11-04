@@ -9,7 +9,9 @@
 <body>
     <!-- Background Image Div -->
     <div class="background-image"></div>
+    <!--the end of background Image Div-->
 
+    <!--the start of the header-->
     <header>
         <nav>
             <a href="index.html" class="logo"><img src="image/logo.png" alt="Logo"></a>
@@ -21,27 +23,30 @@
             </ul>
         </nav>
     </header>
+    <!--the end of the header-->
 
+    <!--the start of the profile image and Index page-->
     <main>
         <section>
             <img src="image/Mo.jpg" alt="Mo Hussain" class="profile-image">
-           
         </section>
-        <div class="skill-card">
+
+        <section class="skill-card">
             <h2>Mo Hussain</h2>
+            <p>Business Management with Innovation and Technology Student at the University of Salford</p>
+            <p>Passionate about bridging the gap between business and technology.</p>
+            <p>My journey in the tech world started in 2022 when I gained a Level 2 Qualification in Technical IT, followed by a Level 3 diploma in business administration. I also topped up with a foundation qualification in Computer Science with Cyber Security.</p>
+            <p>I'm dedicated to exploring innovative solutions for modern business and technology challenges.</p>
+            <h3>Key Skills</h3>
             <ul>
-                <li>Business Management with Innovation and Technology Student at the University of Salford</li>
-                <li>Passionate about bridging the gap between business and technology.</li>
-                <li> My journey in the tech world started in 2022 when I gained a Level 2 Qualification in Technical IT, followed by a Level 3 diploma in business administration.
-                     I also topped up with a foundation qualification in Computer Science with Cyber Security.
-                     I'm dedicated to exploring innovative solutions for modern business and technology challenges.</li>
                 <li>Project Management</li>
                 <li>Data Analytics</li>
             </ul>
-        </div>
+        </section>
     </main>
+    <!--the end of the profile Image and Index page-->
 
-    <section>
+    <!--the start of slider images and navigation buttons-->
         <div class="slider">
             <div class="slides">
                 <!-- Each slide -->
@@ -58,14 +63,15 @@
                     <img src="image/img4.jpg" alt="Slide 4">
                 </div>
                 <div class="slide">
-                    <img src="image/img5.jpg" alt="Slide 4">
+                    <img src="image/img5.jpg" alt="Slide 5">
                 </div>
             </div>
-    
+            <!--the end of the slider images-->
+
             <!-- Navigation buttons -->
             <button class="prev" onclick="moveSlide(-1)">❮</button>
             <button class="next" onclick="moveSlide(1)">❯</button>
-    
+
             <!-- Dots for each slide -->
             <div class="dots">
                 <span class="dot" onclick="currentSlide(1)"></span> 
@@ -74,16 +80,22 @@
                 <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
         </div>
-    </section>
-
+        <!--the end of slider images and navigation buttons-->
+    
+    <!--the start of the java script-->
     <script src="script.js"></script>
+    <!--the end of the java script-->
 
+    <!--the start of the footer-->
     <footer>
-        <img src="image/Youtube.png" alt="YouTube">
-        <img src="image/facebook.png" alt="Facebook">
-        <img src="image/whats.png" alt="WhatsApp">
-        <img src="image/X.png" alt="X">
-        <p>© 2024 [Mohammed Hussain] Personal Website</p>
+        <div class="social-icons">
+            <img src="image/Youtube.png" alt="YouTube">
+            <img src="image/facebook.png" alt="Facebook">
+            <img src="image/whats.png" alt="WhatsApp">
+            <img src="image/X.png" alt="X">
+        </div>
+        <p>© 2024 Mohammed Hussain - Personal Website</p>
     </footer>
+    <!--the end of the footer-->
 </body>
 </html>
